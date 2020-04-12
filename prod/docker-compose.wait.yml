@@ -1,0 +1,12 @@
+version: "3.7"
+services:
+    wait_db:
+        image: "waisbrot/wait"
+        environment:
+          TARGETS: "db:5432"
+    
+    wait_app:
+        image: "waisbrot/wait"
+        environment:
+            TARGETS: "app:8000"
+            

@@ -1,0 +1,12 @@
+version: "3.7"
+services:
+    restic:
+        image: stephaneklein/restic-backup:0.9.6
+        environment:
+            AWS_ACCESS_KEY_ID: ${RESTIC_AWS_ACCESS_KEY_ID}
+            AWS_SECRET_ACCESS_KEY: ${RESTIC_AWS_SECRET_ACCESS_KEY}
+            AWS_DEFAULT_REGION: ${RESTIC_AWS_REGION}
+            RESTIC_REPOSITORY: ${RESTIC_REPOSITORY}
+            RESTIC_PASSWORD: ${RESTIC_PASSWORD}
+        volumes:
+            - ${MATTERMOST_APP_VOLUME_DATA}:/data/

@@ -1,3 +1,13 @@
+# Deploy Mattermost locally
+
+Prerequisite on your computer:
+
+```
+$ brew install docker jq restic
+```
+
+Next:
+
 ```
 $ cp env.sample .env
 ```

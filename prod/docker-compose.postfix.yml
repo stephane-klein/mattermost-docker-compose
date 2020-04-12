@@ -1,0 +1,11 @@
+version: "3.7"
+services:
+    postfix:
+        image: marvambass/versatile-postfix:latest
+        restart: unless-stopped
+        volumes:
+            - ./dkim:/etc/postfix/dkim/
+            - ./maildirs:/var/mail
+        environment:
+            - DKIM_SELECTOR=${POSTFIX_DKIM_SELECTOR}
+        command: chat.santa-maria.io ${MATTERMOST_APP_SMTP_USERNAME}:${MATTERMOST_APP_SMTP_PASSWORD}
