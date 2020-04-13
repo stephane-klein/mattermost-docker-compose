@@ -9,7 +9,7 @@ Project status: unstable, need more testing and peer review, see [issues](https:
 
 Deployment features:
 
-- [x] based on offical Mattermost Docker images
+- [x] based on [offical Mattermost Docker images](https://hub.docker.com/u/mattermost)
 - [x] Alpine PostgreSQL 12.2
 - [x] Backup system (optionnal)
   - [x] [Restic](https://github.com/restic/restic) to backup media data files to S3 compatible system
