@@ -19,3 +19,12 @@ Deployment features:
 ## Why this project?
 
 To share my current Mattermost deployment system.
+
+## Hosting provider
+
+At this time, I like to host my services with success:
+
+- on [Start-2-S-SSD](https://www.scaleway.com/en/dedibox/start/start-2-s-ssd/) Scaleway Dedibox server
+- and push my backup on [Scaleway Object Storage](https://www.scaleway.com/en/object-storage/)
+
+(This message isn't sponsored)
