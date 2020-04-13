@@ -28,10 +28,11 @@ services:
         ports:
             - "8080:80"
         environment:
+            MATTERMOST_ENABLE_SSL: "false"
+            # This parameters are used by nginx-proxy (https://github.com/nginx-proxy/nginx-proxy)
             VIRTUAL_HOST: ${MATTERMOST_VIRTUAL_HOST}
             LETSENCRYPT_HOST: ${MATTERMOST_LETSENCRYPT_HOST}
             LETSENCRYPT_EMAIL: ${MATTERMOST_LETSENCRYPT_EMAIL}
-            MATTERMOST_ENABLE_SSL: "false"
 
 networks:
     default:
