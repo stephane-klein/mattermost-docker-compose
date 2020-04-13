@@ -11,10 +11,10 @@ Deployment features:
 
 - [x] based on [offical Mattermost Docker images](https://hub.docker.com/u/mattermost)
 - [x] Alpine PostgreSQL 12.2
-- [x] Backup system (optionnal)
+- [x] Backup system (optional)
   - [x] [Restic](https://github.com/restic/restic) to backup media data files to S3 compatible system
   - [x] [wal-g](https://github.com/wal-g/wal-g/) to backup PostgreSQL database to S3 compatible system
-- [x] [Postfix](https://github.com/MarvAmBass/docker-versatile-postfix) to send mails (optionnal)
+- [x] [Postfix](https://github.com/MarvAmBass/docker-versatile-postfix) to send mails (optional)
 
 ## Why this project?
 
