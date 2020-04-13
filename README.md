@@ -1,6 +1,6 @@
 # docker-compose files to deploy Mattermost
 
-Project status: unstable (need more testing and peer review)
+Project status: unstable, need more testing and peer review, see [issues](https://github.com/stephane-klein/mattermost-docker-compose/issues)
 
 `docker-compose.yml` files to deploy [Mattermost](https://mattermost.com/):
 
