@@ -23,4 +23,6 @@ Open your browser on:
 
 - Mattermost: https://example.com
 
+## Notes
 
+- For now, the secrets are stored in `.env` file on the server then I don't deploy this project VM instance but rather on Baremetal instance ([see](../#hosting-provider))
